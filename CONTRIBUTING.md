@@ -73,3 +73,4 @@ Screens out there already have settings saved. Adding a setting is fine (it need
 1. `npm run preview` and look at your mode at a few window sizes.
 2. `npm test` and `npm run check` pass.
 3. Open a pull request with a screenshot. CI runs the same checks.
+<!-- CI flow test -->
