@@ -1,0 +1,4 @@
+/* Shared screen basics. night #17293B · amber #F2B134 · mist #8FA3B3 · fog #EEF2F0 */
+.od-mode { position: absolute; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; color: #EEF2F0;
+  font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+.msg { font-size: 4vmin; line-height: 1.4; max-width: 30em; padding: 0 6vmin; text-align: center; color: #EEF2F0; }

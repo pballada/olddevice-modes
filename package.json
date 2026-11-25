@@ -1,0 +1,16 @@
+{
+  "name": "olddevice-modes",
+  "private": true,
+  "type": "module",
+  "description": "Screen modes for olddevice",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "check": "node tools/check.js",
+    "preview": "node tools/serve.js"
+  },
+  "devDependencies": {
+    "es-check": "^9.9.0",
+    "vitest": "^4.1.12"
+  }
+}
