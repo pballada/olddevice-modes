@@ -1,0 +1,11 @@
+{
+  "id": "clock",
+  "name": "Clock",
+  "description": "A big wall clock, with an optional second time zone.",
+  "settings": [
+    { "key": "hour12", "type": "boolean", "label": "12-hour clock", "default": false },
+    { "key": "tz2", "type": "timezone", "label": "Second time zone", "optional": true, "default": null }
+  ],
+  "source": null,
+  "example": { "hour12": false, "tz2": "America/New_York" }
+}

@@ -1,0 +1,8 @@
+.m-clock { position: absolute; top: 0; right: 0; bottom: 0; left: 0; text-align: center;
+  display: -webkit-box; display: -webkit-flex; display: flex; -webkit-box-orient: vertical; -webkit-flex-direction: column; flex-direction: column;
+  -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }
+.m-clock-time { font-size: 30vmin; font-weight: 500; line-height: 1; color: #F2B134; letter-spacing: -0.02em;
+  -webkit-font-feature-settings: "tnum"; font-feature-settings: "tnum"; }
+.m-clock-time small { font-size: 0.3em; margin-left: 0.15em; color: #8FA3B3; font-weight: 500; }
+.m-clock-date { font-size: 6vmin; margin-top: 3vmin; color: #EEF2F0; }
+.m-clock-zone { font-size: 4vmin; margin-top: 2vmin; color: #8FA3B3; }
