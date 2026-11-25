@@ -41,3 +41,15 @@ test('choice needs options, list needs of and maxItems â‰¤ 20, text maxLength â‰
   expect(e).toMatch(/b: maxItems/)
   expect(e).toMatch(/c: maxLength/)
 })
+
+test('url settings also need a numeric maxLength (blocks HTML in dashboard attributes)', () => {
+  const m = clock()
+  m.settings.push({ key: 'u', type: 'url', label: 'U', default: null, optional: true, maxLength: '"><img src=x onerror=alert(1)>' })
+  expect(errs(m).join()).toMatch(/u: maxLength/)
+})
+
+test('number min, max and step must be finite numbers', () => {
+  const m = clock()
+  m.settings.push({ key: 'n', type: 'number', label: 'N', default: 1, min: '"><b>' })
+  expect(errs(m).join()).toMatch(/n: min, max and step/)
+})

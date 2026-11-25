@@ -7,7 +7,7 @@ function settingErrors(s, path) {
   if (!s || typeof s !== 'object') return [`${path}: must be an object`]
   if (!TYPES.includes(s.type)) e.push(`${path}: unknown type "${s.type}"`)
   if (s.type === 'choice' && !(Array.isArray(s.options) && s.options.length && s.options.every(o => o && 'value' in o && typeof o.label === 'string'))) e.push(`${path}: choice needs options [{value, label}]`)
-  if (s.type === 'text' && s.maxLength !== undefined && !(Number.isInteger(s.maxLength) && s.maxLength >= 1 && s.maxLength <= 200)) e.push(`${path}: maxLength must be 1–200`)
+  if ((s.type === 'text' || s.type === 'url') && s.maxLength !== undefined && !(Number.isInteger(s.maxLength) && s.maxLength >= 1 && s.maxLength <= 200)) e.push(`${path}: maxLength must be 1–200`)
   if (s.type === 'url' && s.hosts !== undefined && !(Array.isArray(s.hosts) && s.hosts.every(h => typeof h === 'string'))) e.push(`${path}: hosts must be a list of host names`)
   if (s.type === 'number' && ['min', 'max', 'step'].some(k => s[k] !== undefined && typeof s[k] !== 'number')) e.push(`${path}: min, max and step must be numbers`)
   if (s.type === 'list') {
