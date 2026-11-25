@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>olddevice mode preview</title>
+<link rel="stylesheet" href="/runtime/base.css">
+<style>
+  body { margin: 0; background: #EEF2F0; color: #0F1C29; font: 16px/1.5 "Avenir Next", "Segoe UI", Roboto, sans-serif; }
+  main { display: flex; gap: 1.5rem; padding: 1.5rem; flex-wrap: wrap; align-items: flex-start; }
+  .controls { width: 22rem; }
+  label { display: block; font-weight: 600; margin: 0 0 0.35rem; }
+  select, textarea { width: 100%; font: inherit; border: 2px solid #8FA3B3; border-radius: 8px; padding: 0.5rem; box-sizing: border-box; background: #fff; }
+  textarea { height: 16rem; font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+  .field { margin-bottom: 1rem; }
+  .error { color: #A3261B; min-height: 1.5em; }
+  .frame { position: relative; width: 960px; max-width: 100%; aspect-ratio: 16 / 9; background: #17293B; border-radius: 10px; overflow: hidden; }
+  .frame .od-mode { display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+<main>
+  <div class="controls">
+    <h1>Mode preview</h1>
+    <div class="field"><label for="mode">Mode</label><select id="mode"></select></div>
+    <div class="field"><label for="options">Settings (JSON)</label><textarea id="options" spellcheck="false"></textarea></div>
+    <div class="field"><label for="data">Example data (JSON, modes with a data source)</label><textarea id="data" spellcheck="false"></textarea></div>
+    <p id="error" class="error" role="alert"></p>
+  </div>
+  <div class="frame"><div id="root" class="od-mode"></div></div>
+</main>
+<script src="/runtime/runtime.js"></script>
+<script type="module" src="/tools/preview/preview.js"></script>
+</body>
+</html>
