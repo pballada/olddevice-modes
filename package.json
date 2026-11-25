@@ -10,6 +10,7 @@
     "preview": "node tools/serve.js"
   },
   "devDependencies": {
+    "acorn": "^8.19.0",
     "es-check": "^9.9.0",
     "vitest": "^4.1.12"
   }
