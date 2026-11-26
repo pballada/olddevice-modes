@@ -53,7 +53,7 @@ Thanks for helping old screens do new things. A mode is one folder in `modes/`. 
 Rules (most are checked automatically):
 
 - **ES5 only.** No `let`/`const`, arrow functions, classes, template strings or `Promise`. Screens include iPads from 2011.
-- **No network or storage.** Don't use `fetch`, `XMLHttpRequest`, `WebSocket`, `localStorage`, `sessionStorage` or cookies, and don't load scripts or images from other sites. Data only arrives through `data`.
+- **No network or storage.** Don't use `fetch`, `XMLHttpRequest`, `WebSocket`, `localStorage`, `sessionStorage` or cookies, and don't load scripts or images from other sites. Data only arrives through `data`. (The photos mode shows images whose links come from its data source, never from settings.)
 - **No `eval` or `Function(`.**
 - **Stay in your box.** Draw only inside `root`. Prefix CSS classes with `m-<id>-`. Add no globals.
 - **Escape text** from settings or data with `OD.esc(text)` before putting it in HTML.

@@ -1,0 +1,13 @@
+{
+  "id": "social",
+  "name": "Follower counters",
+  "description": "Live follower and subscriber counts for YouTube, Bluesky, Mastodon and GitHub accounts.",
+  "settings": [
+    { "key": "youtube", "type": "list", "label": "YouTube channels (@handle)", "of": { "type": "text", "maxLength": 100 }, "maxItems": 5, "default": [] },
+    { "key": "bluesky", "type": "list", "label": "Bluesky handles", "of": { "type": "text", "maxLength": 100 }, "maxItems": 5, "default": [] },
+    { "key": "mastodon", "type": "list", "label": "Mastodon accounts (name@server)", "of": { "type": "text", "maxLength": 100 }, "maxItems": 5, "default": [] },
+    { "key": "github", "type": "list", "label": "GitHub users", "of": { "type": "text", "maxLength": 100 }, "maxItems": 5, "default": [] }
+  ],
+  "source": { "type": "social", "settings": ["youtube", "bluesky", "mastodon", "github"], "refreshMinutes": 30 },
+  "example": { "youtube": ["@oldtech"], "bluesky": ["olddevice.bsky.social"], "mastodon": [], "github": ["pballada"] }
+}

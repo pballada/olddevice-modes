@@ -1,0 +1,17 @@
+{
+  "id": "news",
+  "name": "News",
+  "description": "Headlines from news sites and blogs, one at a time, with their source and time.",
+  "settings": [
+    { "key": "preset", "type": "choice", "label": "News source", "optional": true, "options": [
+      { "value": "https://feeds.bbci.co.uk/news/world/rss.xml", "label": "BBC News, world" },
+      { "value": "https://www.theguardian.com/world/rss", "label": "The Guardian, world" },
+      { "value": "https://feeds.npr.org/1001/rss.xml", "label": "NPR News" },
+      { "value": "https://www.aljazeera.com/xml/rss/all.xml", "label": "Al Jazeera" }
+    ], "default": "https://feeds.bbci.co.uk/news/world/rss.xml" },
+    { "key": "feeds", "type": "list", "label": "More feed links (RSS or Atom)", "of": { "type": "url" }, "maxItems": 5, "default": [] },
+    { "key": "seconds", "type": "number", "label": "Seconds per headline", "min": 5, "max": 120, "step": 1, "default": 12 }
+  ],
+  "source": { "type": "rss", "settings": ["preset", "feeds"], "refreshMinutes": 15 },
+  "example": { "preset": "https://feeds.bbci.co.uk/news/world/rss.xml", "feeds": [], "seconds": 12 }
+}

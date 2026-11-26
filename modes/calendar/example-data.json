@@ -1,0 +1,49 @@
+{
+ "events": [
+  {
+   "title": "Team standup",
+   "start": 1795681800000,
+   "end": 1795682700000
+  },
+  {
+   "title": "Lunch with Marta",
+   "start": 1795696200000,
+   "end": 1795701600000
+  },
+  {
+   "title": "Pick up the kids",
+   "start": 1795708800000,
+   "end": 1795710600000
+  },
+  {
+   "title": "Yoga",
+   "start": 1795717800000,
+   "end": 1795721400000
+  },
+  {
+   "title": "Recycling day",
+   "allDay": true,
+   "date": "2026-11-27"
+  },
+  {
+   "title": "Dentist",
+   "start": 1795770000000,
+   "end": 1795773600000
+  },
+  {
+   "title": "Design review",
+   "start": 1795791600000,
+   "end": 1795795200000
+  },
+  {
+   "title": "Farmers market",
+   "start": 1795852800000,
+   "end": 1795860000000
+  },
+  {
+   "title": "Grandma’s birthday dinner",
+   "start": 1795892400000,
+   "end": 1795903200000
+  }
+ ]
+}

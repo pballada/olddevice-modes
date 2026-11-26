@@ -1,0 +1,12 @@
+{
+  "id": "calendar",
+  "name": "Calendar",
+  "description": "What's on today and the next few days, from a public or secret calendar link (.ics).",
+  "settings": [
+    { "key": "ics", "type": "url", "label": "Calendar link (.ics, from Google or iCloud sharing)", "optional": true, "default": null },
+    { "key": "days", "type": "number", "label": "Days to show", "min": 1, "max": 5, "step": 1, "default": 3 },
+    { "key": "hour12", "type": "boolean", "label": "12-hour clock", "default": false }
+  ],
+  "source": { "type": "calendar", "settings": ["ics"], "refreshMinutes": 30 },
+  "example": { "ics": "https://calendar.google.com/calendar/ical/example/public/basic.ics", "days": 3, "hour12": false }
+}

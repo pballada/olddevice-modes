@@ -1,0 +1,12 @@
+{
+  "place": "Madrid",
+  "current": { "temp": 14.2, "code": 2 },
+  "today": { "high": 17, "low": 8 },
+  "days": [
+    { "date": "2026-11-27", "high": 16, "low": 7, "code": 0 },
+    { "date": "2026-11-28", "high": 13, "low": 6, "code": 3 },
+    { "date": "2026-11-29", "high": 11, "low": 5, "code": 61 },
+    { "date": "2026-11-30", "high": 9, "low": 2, "code": 95 },
+    { "date": "2026-12-01", "high": 6, "low": -1, "code": 71 }
+  ]
+}

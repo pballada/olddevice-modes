@@ -1,0 +1,21 @@
+.m-social { position: absolute; top: 0; right: 0; bottom: 0; left: 0; padding: 6vmin; box-sizing: border-box;
+  display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap;
+  -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center;
+  -webkit-box-align: center; -webkit-align-items: center; -webkit-align-content: center; align-content: center; align-items: center; }
+.m-social-card { margin: 3vmin 5vmin; text-align: center; min-width: 30vmin; }
+.m-social-count { font-size: 15vmin; line-height: 1; font-weight: 500; color: #F2B134; letter-spacing: -0.02em;
+  -webkit-font-feature-settings: "tnum"; font-feature-settings: "tnum"; }
+.m-social-name { font-size: 4.6vmin; font-weight: 600; margin-top: 2.4vmin; }
+.m-social-net { font-size: 3.4vmin; color: #8FA3B3; margin-top: 0.6vmin; }
+.m-social-net:before { content: ""; display: inline-block; width: 0.6em; height: 0.6em; border-radius: 50%; margin-right: 0.45em; background: #8FA3B3; vertical-align: 0.05em; }
+.m-social-youtube:before { background: #FF4E45; }
+.m-social-bluesky:before { background: #3F9BFF; }
+.m-social-mastodon:before { background: #8C8DFF; }
+.m-social-github:before { background: #EEF2F0; }
+.m-social-one .m-social-count { font-size: 30vmin; }
+.m-social-one .m-social-name { font-size: 7vmin; }
+.m-social-one .m-social-net { font-size: 5vmin; }
+.m-social-many .m-social-card { margin: 2vmin 3vmin; min-width: 24vmin; }
+.m-social-many .m-social-count { font-size: 9vmin; }
+.m-social-many .m-social-name { font-size: 3.4vmin; }
+.m-social-many .m-social-net { font-size: 2.8vmin; }
