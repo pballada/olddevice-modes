@@ -1,0 +1,26 @@
+.m-photos, .m-photos-layer, .m-photos-img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.m-photos { background: #000; }
+.m-photos-img { background-position: center; background-repeat: no-repeat; }
+.m-photos-fill { background-size: cover; }
+.m-photos-fit { background-size: contain; }
+.m-photos-preload { position: absolute; width: 1px; height: 1px; opacity: 0.01; background-size: cover; }
+.m-photos-in { -webkit-animation: m-photos-fade 2s ease-in-out both; animation: m-photos-fade 2s ease-in-out both; }
+@-webkit-keyframes m-photos-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes m-photos-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Ken Burns: four slow zoom-and-pan directions, taken in turn. Duration and delay are set per photo. */
+.m-photos-kb0, .m-photos-kb1, .m-photos-kb2, .m-photos-kb3 { -webkit-animation-timing-function: linear; animation-timing-function: linear;
+  -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+.m-photos-kb0 { -webkit-animation-name: m-photos-kb0; animation-name: m-photos-kb0; }
+.m-photos-kb1 { -webkit-animation-name: m-photos-kb1; animation-name: m-photos-kb1; }
+.m-photos-kb2 { -webkit-animation-name: m-photos-kb2; animation-name: m-photos-kb2; }
+.m-photos-kb3 { -webkit-animation-name: m-photos-kb3; animation-name: m-photos-kb3; }
+@-webkit-keyframes m-photos-kb0 { from { -webkit-transform: scale(1) translate(0, 0); } to { -webkit-transform: scale(1.12) translate(-2%, -1%); } }
+@keyframes m-photos-kb0 { from { transform: scale(1) translate(0, 0); } to { transform: scale(1.12) translate(-2%, -1%); } }
+@-webkit-keyframes m-photos-kb1 { from { -webkit-transform: scale(1.12) translate(2%, 1%); } to { -webkit-transform: scale(1) translate(0, 0); } }
+@keyframes m-photos-kb1 { from { transform: scale(1.12) translate(2%, 1%); } to { transform: scale(1) translate(0, 0); } }
+@-webkit-keyframes m-photos-kb2 { from { -webkit-transform: scale(1.05) translate(-2%, 1%); } to { -webkit-transform: scale(1.14) translate(2%, -1%); } }
+@keyframes m-photos-kb2 { from { transform: scale(1.05) translate(-2%, 1%); } to { transform: scale(1.14) translate(2%, -1%); } }
+@-webkit-keyframes m-photos-kb3 { from { -webkit-transform: scale(1.14) translate(-1%, -2%); } to { -webkit-transform: scale(1.04) translate(1%, 1%); } }
+@keyframes m-photos-kb3 { from { transform: scale(1.14) translate(-1%, -2%); } to { transform: scale(1.04) translate(1%, 1%); } }
+@media (prefers-reduced-motion: reduce) { .m-photos-img { -webkit-animation: none !important; animation: none !important; } }

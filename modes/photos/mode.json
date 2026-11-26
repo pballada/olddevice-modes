@@ -1,0 +1,13 @@
+{
+  "id": "photos",
+  "name": "Photos",
+  "description": "A photo frame for a shared album on iCloud, Dropbox or Google Drive. Your photos stay where they are.",
+  "settings": [
+    { "key": "album", "type": "url", "label": "Shared album or folder link", "hosts": ["icloud.com", "dropbox.com", "drive.google.com"], "optional": true, "default": null },
+    { "key": "seconds", "type": "number", "label": "Seconds per photo", "min": 5, "max": 600, "step": 1, "default": 20 },
+    { "key": "fit", "type": "choice", "label": "Photo size", "options": [{ "value": "fill", "label": "Fill the screen (crops edges)" }, { "value": "fit", "label": "Show the whole photo" }], "default": "fill" },
+    { "key": "motion", "type": "boolean", "label": "Slow zoom and pan", "default": true }
+  ],
+  "source": { "type": "photos", "settings": ["album"], "refreshMinutes": 60 },
+  "example": { "album": "https://www.icloud.com/sharedalbum/#B2Example", "seconds": 20, "fit": "fill", "motion": true }
+}

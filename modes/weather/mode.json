@@ -1,0 +1,11 @@
+{
+  "id": "weather",
+  "name": "Weather",
+  "description": "Current weather and a five-day forecast for one place, from Open-Meteo.",
+  "settings": [
+    { "key": "place", "type": "text", "label": "Place (city, region or country)", "maxLength": 80, "default": "" },
+    { "key": "units", "type": "choice", "label": "Units", "options": [{ "value": "celsius", "label": "Celsius (°C)" }, { "value": "fahrenheit", "label": "Fahrenheit (°F)" }], "default": "celsius" }
+  ],
+  "source": { "type": "weather", "settings": ["place", "units"], "refreshMinutes": 30 },
+  "example": { "place": "Madrid", "units": "celsius" }
+}

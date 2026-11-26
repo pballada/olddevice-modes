@@ -1,1 +1,7 @@
-{}
+{
+  "weather": { "settings": ["place", "units"], "returns": "{ place, current: { temp, code }, today: { high, low }, days: [{ date: 'YYYY-MM-DD', high, low, code }] } (code = WMO weather code from Open-Meteo)" },
+  "photos": { "settings": ["album"], "returns": "{ photos: [{ url }] } (screen-sized image links from the album's provider)" },
+  "rss": { "settings": ["preset", "feeds"], "returns": "{ items: [{ title, source, time }] } (time in ms, newest first, about 20)" },
+  "calendar": { "settings": ["ics"], "returns": "{ events: [{ title, start, end } or { title, allDay: true, date: 'YYYY-MM-DD' }] } (start/end in ms, today through 7 days, repeats expanded)" },
+  "social": { "settings": ["youtube", "bluesky", "mastodon", "github"], "returns": "{ counts: [{ network: 'youtube' | 'bluesky' | 'mastodon' | 'github', name, count }] }" }
+}

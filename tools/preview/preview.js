@@ -31,6 +31,10 @@ function pick() {
   show()
 }
 
+// ?mode=<id> opens that mode; &bare shows only the screen (used for README screenshots).
+const q = new URLSearchParams(location.search)
+if (modes.some(m => m.id === q.get('mode'))) $('mode').value = q.get('mode')
+if (q.has('bare')) document.body.classList.add('bare')
 $('mode').addEventListener('change', pick)
 $('options').addEventListener('input', show)
 $('data').addEventListener('input', show)
